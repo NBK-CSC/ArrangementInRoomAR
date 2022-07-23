@@ -3,7 +3,7 @@ using UnityEngine;
 public class SelectionPanel : MonoBehaviour
 {
     [SerializeField] private ItemData[] _itemDatas;
-    [SerializeField] private Transform _objectPlacer;
+    [SerializeField] private ObjectPlacer _objectPlacer;
     [SerializeField] private GameObject _itemTemplate;
     [SerializeField] private Transform _container;
     
@@ -23,7 +23,7 @@ public class SelectionPanel : MonoBehaviour
 
     private void OnItemSelected(ItemData itemData)
     {
-        
+        _objectPlacer.SetInstallObject(itemData);
     }
 
     private void InItemDisabled(ItemView itemView)
