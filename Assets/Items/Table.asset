@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icon: {fileID: 0}
   _label: Table
-  _prefab: {fileID: 0}
+  _prefab: {fileID: 919132149155446097, guid: 1fe9bd5fdabc9bb4da0d208af70eb975, type: 3}
