@@ -31,14 +31,14 @@ public class ObjectPlacer : MonoBehaviour
     {
         Vector2 screenCenter = _camera.ViewportToScreenPoint(new Vector2(0.5f,0.5f));
         var ray = _camera.ScreenPointToRay(screenCenter);
-        Debug.DrawRay(transform.position, transform.forward * 100f,Color.green);
+        //Debug.DrawRay(transform.position, transform.forward * 100f,Color.green);
         if (Physics.Raycast(ray, out RaycastHit raycastHit))
         {
-            SetObjectPosition(raycastHit.point);
+            SetObjectPosition(raycastHit.point, raycastHit.normal);
         }
         else if (_arRaycastManager.Raycast(screenCenter, _hits, TrackableType.PlaneWithinPolygon))
         {
-            SetObjectPosition(_hits[0].pose.position);
+            SetObjectPosition(_hits[0].pose.position, Vector3.zero);
         }
     }
 
@@ -48,13 +48,14 @@ public class ObjectPlacer : MonoBehaviour
         _installedObject.transform.parent = _container.transform;
         _installedObject=null;
     }
-
-    private void SetObjectPosition(Vector3 position)
+    
+    private void SetObjectPosition(Vector3 point, Vector3 normal)
     {
-        _objectPlace.position = position;
-        Vector3 cameraForward = _camera.transform.forward;
-        Vector3 cameraRotation = new Vector3(cameraForward.x, 0, cameraForward.z);
-        _objectPlace.rotation = Quaternion.Euler(cameraRotation);
+        _objectPlace.position = point;
+        //Vector3 cameraForward = _camera.transform.forward;
+        //Vector3 cameraRotation = new Vector3(cameraForward.x, 0, cameraForward.z);
+        _objectPlace.transform.up = normal;
+        //_objectPlace.rotation = Quaternion.Euler(cameraRotation);
     }
 
     public void SetInstallObject(ItemData itemData)

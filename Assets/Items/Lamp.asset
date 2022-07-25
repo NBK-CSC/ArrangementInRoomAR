@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icon: {fileID: 0}
   _label: Lamp
-  _prefab: {fileID: 919132149155446097, guid: 17fa81adc4f540643ad59854c741ebfe, type: 3}
+  _prefab: {fileID: 1717966999435253884, guid: 56b09a847bba70540925dfaaf09ffd12, type: 3}
