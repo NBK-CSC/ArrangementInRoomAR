@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -30,6 +31,7 @@ public class ObjectPlacer : MonoBehaviour
     {
         Vector2 screenCenter = _camera.ViewportToScreenPoint(new Vector2(0.5f,0.5f));
         var ray = _camera.ScreenPointToRay(screenCenter);
+        Debug.DrawRay(transform.position, transform.forward * 100f,Color.green);
         if (Physics.Raycast(ray, out RaycastHit raycastHit))
         {
             SetObjectPosition(raycastHit.point);
@@ -40,14 +42,14 @@ public class ObjectPlacer : MonoBehaviour
         }
     }
 
-    private void SetObject()
+    public void SetObject()
     {
         _installedObject.GetComponent<Collider>().enabled = true;
         _installedObject.transform.parent = _container.transform;
-        _objectPlace=null;
+        _installedObject=null;
     }
 
-    private void SetObjectPosition(Vector3 position )
+    private void SetObjectPosition(Vector3 position)
     {
         _objectPlace.position = position;
         Vector3 cameraForward = _camera.transform.forward;
@@ -57,7 +59,7 @@ public class ObjectPlacer : MonoBehaviour
 
     public void SetInstallObject(ItemData itemData)
     {
-        if(_installedObject!=null)
+        if (_installedObject != null)
             Destroy(_installedObject);
         _installedObject = Instantiate(itemData.Prefab, _objectPlace);
         _installedObject.GetComponent<Collider>().enabled = false;

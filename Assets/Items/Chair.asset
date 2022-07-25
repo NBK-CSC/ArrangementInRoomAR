@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icon: {fileID: 0}
   _label: Chair
-  _prefab: {fileID: 919132149155446097, guid: 99b26a1720288e243992e6cc3af199e6, type: 3}
+  _prefab: {fileID: 3993174606440660555, guid: 548ca22733a44a448942d784ad34e850, type: 3}
