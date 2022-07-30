@@ -54,7 +54,7 @@ public class ObjectPlacer : MonoBehaviour
         _objectPlace.position = point;
         //Vector3 cameraForward = _camera.transform.forward;
         //Vector3 cameraRotation = new Vector3(cameraForward.x, 0, cameraForward.z);
-        _objectPlace.transform.up = normal;
+        //_objectPlace.transform.up = normal;
         //_objectPlace.rotation = Quaternion.Euler(cameraRotation);
     }
 
