@@ -4,11 +4,15 @@ using UnityEngine.EventSystems;
 
 public class ObjectRotationer : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    [SerializeField] private GameObject _templateObject;
-    [SerializeField] private float _viscosity;
     [SerializeField] private Camera _camera;
     [SerializeField] private Transform _pointTouchButton;
-    
+    private RectTransform _rectTransform;
+
+    private void Start()
+    {
+        _rectTransform = GetComponent<RectTransform>();
+    }
+
     public void OnBeginDrag(PointerEventData touch)
     {
 
@@ -16,15 +20,17 @@ public class ObjectRotationer : MonoBehaviour, IBeginDragHandler, IDragHandler, 
     
     public void OnDrag(PointerEventData touch)
     {
-        var currentPosition=_camera.WorldToScreenPoint(_pointTouchButton.position);
-        var transformPosition = _camera.WorldToScreenPoint(transform.position);
+        var currentPosition=(Vector2)_camera.WorldToScreenPoint(_pointTouchButton.position);
+        var transformPosition = (Vector2)_camera.WorldToScreenPoint(transform.position);
         var targetPosition = touch.position;
         
-        var currentDir = (Vector2)transformPosition - (Vector2)currentPosition;
-        var targetDir = (Vector2)transformPosition - targetPosition;
+        var currentDir =transformPosition - currentPosition;
+        var targetDir = transformPosition - targetPosition;
         
-        transform.Rotate(Vector3.forward,Vector2.SignedAngle(currentDir,targetDir));
-        //transform.right = Vector3.Lerp(currentDir, targetDir, 100f * Time.deltaTime);
+        var rectRotation = _rectTransform.rotation.eulerAngles.x;
+        var angle = Vector2.SignedAngle(currentDir, targetDir)*Math.Cos(rectRotation*Math.PI/180.0);
+
+        transform.Rotate(Vector3.forward,(float)angle);
     }   
 
     public void OnEndDrag(PointerEventData touch)
