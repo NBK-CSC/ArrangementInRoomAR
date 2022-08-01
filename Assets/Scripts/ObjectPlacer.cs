@@ -8,6 +8,7 @@ using UnityEngine.XR.ARSubsystems;
 public class ObjectPlacer : MonoBehaviour
 {
     [SerializeField] private Transform _objectPlace;
+    [SerializeField] private Transform _objectRotation;
     [SerializeField] private Camera _camera;
     [SerializeField] private GameObject _container;
 
@@ -31,7 +32,6 @@ public class ObjectPlacer : MonoBehaviour
     {
         Vector2 screenCenter = _camera.ViewportToScreenPoint(new Vector2(0.5f,0.5f));
         var ray = _camera.ScreenPointToRay(screenCenter);
-        //Debug.DrawRay(transform.position, transform.forward * 100f,Color.green);
         if (Physics.Raycast(ray, out RaycastHit raycastHit))
         {
             SetObjectPosition(raycastHit.point, raycastHit.normal);
@@ -54,7 +54,7 @@ public class ObjectPlacer : MonoBehaviour
         _objectPlace.position = point;
         //Vector3 cameraForward = _camera.transform.forward;
         //Vector3 cameraRotation = new Vector3(cameraForward.x, 0, cameraForward.z);
-        //_objectPlace.transform.up = normal;
+        _objectPlace.forward=-normal;
         //_objectPlace.rotation = Quaternion.Euler(cameraRotation);
     }
 
@@ -62,7 +62,8 @@ public class ObjectPlacer : MonoBehaviour
     {
         if (_installedObject != null)
             Destroy(_installedObject);
-        _installedObject = Instantiate(itemData.Prefab, _objectPlace);
+        _installedObject = Instantiate(itemData.Prefab, _objectRotation);
+        _installedObject.GetComponent<ObjectCenter>().SetCenterObject();
         _installedObject.GetComponent<Collider>().enabled = false;
     }
 }
