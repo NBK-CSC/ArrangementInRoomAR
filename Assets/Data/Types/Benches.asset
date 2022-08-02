@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02f7d0bf4b2ce74580be7dcbf6a4546, type: 3}
+  m_Name: Benches
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 0}
+  _label: Benches
+  _furnitures:
+  - {fileID: 11400000, guid: 00357ffb31f94ce49aa17f4c97281286, type: 2}
+  - {fileID: 11400000, guid: 49836c5d8998ee74099600979d1f7640, type: 2}
+  - {fileID: 11400000, guid: 8066d5e3490336e408538b306baef5db, type: 2}
+  _typesFurniture: []

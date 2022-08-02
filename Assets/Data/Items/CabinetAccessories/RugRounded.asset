@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f38dda9b3cb35f4cb56a1c288d4a28d, type: 3}
+  m_Name: RugRounded
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 0}
+  _label: Rug Rounded
+  _prefab: {fileID: 2250048341814477305, guid: 59b32b99030e44d48a458ec01684df09, type: 3}

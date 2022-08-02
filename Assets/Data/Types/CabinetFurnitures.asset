@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02f7d0bf4b2ce74580be7dcbf6a4546, type: 3}
+  m_Name: CabinetFurnitures
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 0}
+  _label: Cabinet Furnitures
+  _furnitures:
+  - {fileID: 11400000, guid: a970713c84a1ee448b6bf0c8ba161a1d, type: 2}
+  - {fileID: 11400000, guid: a4a7426dc66d56e4697cd47a319b14db, type: 2}
+  - {fileID: 11400000, guid: 67fe7039430bc944cb7084c94ae5e8b0, type: 2}
+  - {fileID: 11400000, guid: 70846077cd31441488969c11f8cd6e09, type: 2}
+  - {fileID: 11400000, guid: d54c4e37c0e50804696b8e82e9358d6a, type: 2}
+  - {fileID: 11400000, guid: 59e4c935411a889489aa8e3f565824f1, type: 2}
+  - {fileID: 11400000, guid: 9ed9f27f960b0a04c8765c424961916b, type: 2}
+  _typesFurniture: []

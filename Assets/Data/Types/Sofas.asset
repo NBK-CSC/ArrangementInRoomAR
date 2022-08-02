@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02f7d0bf4b2ce74580be7dcbf6a4546, type: 3}
+  m_Name: Sofas
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 0}
+  _label: Sofas
+  _furnitures:
+  - {fileID: 11400000, guid: 0da823b1c120a4b4e99e9beae911f20b, type: 2}
+  - {fileID: 11400000, guid: 48dfd23a56c207642a23951fd1ebc6da, type: 2}
+  - {fileID: 11400000, guid: cf4d56a4dcb62c345bbd381858032f48, type: 2}
+  - {fileID: 11400000, guid: 61c5f02120c22b249bc0d0f33d721db2, type: 2}
+  - {fileID: 11400000, guid: 61af761083dde8143a7aa69204ce5400, type: 2}
+  - {fileID: 11400000, guid: 4904a10d62196d643a474a77f9ef3fc1, type: 2}
+  _typesFurniture: []

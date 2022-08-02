@@ -11,9 +11,12 @@ public class ItemView : MonoBehaviour
     [SerializeField] private Button _selectionButton;
 
     private ItemData _itemData;
+    private TypesData _typesData;
 
     public event UnityAction<ItemData> ItemSelected;
     public event UnityAction<ItemView> ItemDisabled;
+    public event UnityAction<TypesData> TypeSelected;
+    public event UnityAction<ItemView> TypeDisabled;
 
     private void OnEnable()
     {
@@ -23,12 +26,16 @@ public class ItemView : MonoBehaviour
     private void OnDisable()
     {
         ItemDisabled?.Invoke(this);
+        TypeDisabled?.Invoke(this);
         _selectionButton.onClick.RemoveListener(OnSelectionButtonClick);
     }
 
     private void OnSelectionButtonClick()
     {
-        ItemSelected?.Invoke(_itemData);
+        if (_itemData != null)
+            ItemSelected?.Invoke(_itemData);
+        else
+            TypeSelected?.Invoke(_typesData);
     }
 
     public void Init(ItemData itemData)
@@ -36,5 +43,12 @@ public class ItemView : MonoBehaviour
         _itemData = itemData;
         _image.sprite = itemData.Icon;
         _label.text = itemData.Label;
+    }
+    
+    public void Init(TypesData typesData)
+    {
+        _typesData = typesData;
+        _image.sprite = typesData.Icon;
+        _label.text = typesData.Label;
     }
 }

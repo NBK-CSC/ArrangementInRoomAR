@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02f7d0bf4b2ce74580be7dcbf6a4546, type: 3}
+  m_Name: BathroomFurnitures
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 0}
+  _label: Bathroom Furniture
+  _furnitures:
+  - {fileID: 11400000, guid: cc223b6899d3fd844aa63e1d0463dcd3, type: 2}
+  - {fileID: 11400000, guid: 53593745e1495bd4b9dfebd54611931a, type: 2}
+  - {fileID: 11400000, guid: afc72f744cf9e1140b2431e0eac4761f, type: 2}
+  - {fileID: 11400000, guid: 80364e6908b64f74b83538d545ad4108, type: 2}
+  - {fileID: 11400000, guid: 7d8f535d5dd4c8a45bcbfee0ff91c72c, type: 2}
+  - {fileID: 11400000, guid: 05794addfe3f897408f18e717009c4b3, type: 2}
+  - {fileID: 11400000, guid: fb17cf517f9139e4fa0b66ebec24ce9d, type: 2}
+  _typesFurniture: []

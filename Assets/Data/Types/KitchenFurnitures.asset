@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02f7d0bf4b2ce74580be7dcbf6a4546, type: 3}
+  m_Name: KitchenFurnitures
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 0}
+  _label: Kitchen Furnitures
+  _furnitures:
+  - {fileID: 11400000, guid: 5546a20392dc9564ca6f084aa7f029f4, type: 2}
+  - {fileID: 11400000, guid: 7b4f3101f20606f41a215a6142830fc3, type: 2}
+  - {fileID: 11400000, guid: df81983374965c4488f5dba270075161, type: 2}
+  - {fileID: 11400000, guid: 27bf8806db9adf24598a4e2915524983, type: 2}
+  - {fileID: 11400000, guid: db250319ff34834409ffd4d0cc43d724, type: 2}
+  - {fileID: 11400000, guid: 1ccf8a2496717434fb60cb4cafcccd25, type: 2}
+  - {fileID: 11400000, guid: 335034d237e5d3647906b34afb8e38ba, type: 2}
+  - {fileID: 11400000, guid: 00bfe9d1de577e84bafb005e3f97b914, type: 2}
+  - {fileID: 11400000, guid: 1a6f50208823a7c4f8f8b5c993557a21, type: 2}
+  - {fileID: 11400000, guid: 91a7549fb2d44dd47969a9d016668ee2, type: 2}
+  - {fileID: 11400000, guid: f74641a896e679d42977438f86820c68, type: 2}
+  - {fileID: 11400000, guid: ae9040be5eed8624cb66b524fe4aaa78, type: 2}
+  - {fileID: 11400000, guid: f5c2db46f7b085743b035ba92be57763, type: 2}
+  - {fileID: 11400000, guid: 14069b1a51771d348be387e5ada915f5, type: 2}
+  _typesFurniture: []

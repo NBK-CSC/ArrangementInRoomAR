@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02f7d0bf4b2ce74580be7dcbf6a4546, type: 3}
+  m_Name: CabinetAccessories
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 0}
+  _label: Cabinet Accessories
+  _furnitures:
+  - {fileID: 11400000, guid: 2283d6c80a4bd744e851e0dbf9d68645, type: 2}
+  - {fileID: 11400000, guid: 5e129c1e5ce94044c941dc9b4383d138, type: 2}
+  - {fileID: 11400000, guid: a5f83d5138ef9f440b2bfd1942b0ec04, type: 2}
+  - {fileID: 11400000, guid: 90d2fba1640bbc4448cd94fb890e9631, type: 2}
+  - {fileID: 11400000, guid: 3c04ddeced5561a48a0799be05880c92, type: 2}
+  - {fileID: 11400000, guid: 441b7ed1c158efb4086445bf1fa802b8, type: 2}
+  - {fileID: 11400000, guid: 77daebcf58a4d884f9fcc81edccd8b02, type: 2}
+  - {fileID: 11400000, guid: 482792db345bba7438bc3159cd503a26, type: 2}
+  - {fileID: 11400000, guid: 2214c24f0603ae14ca15064fb90d1d38, type: 2}
+  - {fileID: 11400000, guid: 76ce6cb454949a94080a630467b7d855, type: 2}
+  - {fileID: 11400000, guid: 453385d1b771e84418aed5cfcbcd8071, type: 2}
+  - {fileID: 11400000, guid: 57fc1c396693f544fb3326c133a2e47f, type: 2}
+  - {fileID: 11400000, guid: 6ed28037c89e0364390b95f0d4a1bf60, type: 2}
+  - {fileID: 11400000, guid: bd002fc110ba8814e953ba702356dd16, type: 2}
+  - {fileID: 11400000, guid: 7cdf59e917bc8fb49b28c7cbb4c1aaca, type: 2}
+  - {fileID: 11400000, guid: 255ef30e3da1ab440843973e5c33a463, type: 2}
+  - {fileID: 11400000, guid: 7a8849f83f567ac458a3d58ddcca740f, type: 2}
+  - {fileID: 11400000, guid: 0011f5b60bab1c149b3b1bc8094c5235, type: 2}
+  - {fileID: 11400000, guid: 9ed26b7671436dd43ab88a66f47255ef, type: 2}
+  - {fileID: 11400000, guid: 8dede073029224e4e9f53b8d6a29fdc6, type: 2}
+  - {fileID: 11400000, guid: 289fab7c68710e34b9950da8e86a225e, type: 2}
+  - {fileID: 11400000, guid: 2b6a2c75191f2bd4f8e9503b4ccc47e1, type: 2}
+  - {fileID: 11400000, guid: 88a16133c66613a47ba733a9ab879309, type: 2}
+  _typesFurniture: []
