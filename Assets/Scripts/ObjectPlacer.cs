@@ -11,7 +11,6 @@ public class ObjectPlacer : MonoBehaviour
     [SerializeField] private Transform _objectRotation;
     [SerializeField] private Camera _camera;
     [SerializeField] private GameObject _container;
-    [SerializeField] private float _minAngleInclination;
     
     private ARRaycastManager _arRaycastManager;
     private GameObject _installedObject;
@@ -55,7 +54,7 @@ public class ObjectPlacer : MonoBehaviour
     private void SetObjectPosition(Vector3 point, Vector3 normal)
     {
         _objectPlace.position = point;
-        _objectPlace.forward=-normal;
+        _objectPlace.forward = -normal;
     }
 
     public void SetInstallObject(ItemData itemData)

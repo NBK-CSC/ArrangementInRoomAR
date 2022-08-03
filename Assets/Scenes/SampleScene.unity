@@ -315,7 +315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455771807556880560, guid: 145ad4fffc9d2454bbf71d79034b3833, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 455771807556880560, guid: 145ad4fffc9d2454bbf71d79034b3833, type: 3}
       propertyPath: m_LocalScale.z
@@ -327,11 +327,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455771807556880560, guid: 145ad4fffc9d2454bbf71d79034b3833, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -37.6
+      value: -9.3
       objectReference: {fileID: 0}
     - target: {fileID: 455771807556880560, guid: 145ad4fffc9d2454bbf71d79034b3833, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.3
+      value: 5.4
       objectReference: {fileID: 0}
     - target: {fileID: 455771807556880560, guid: 145ad4fffc9d2454bbf71d79034b3833, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1391,6 +1391,7 @@ MonoBehaviour:
   _camera: {fileID: 1083426413}
   _pointTouchButton: {fileID: 1278636053}
   _rectTransform: {fileID: 2000540919}
+  _turningForce: 5
 --- !u!1 &1278636052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,4 +1820,3 @@ MonoBehaviour:
   _objectRotation: {fileID: 1170388377}
   _camera: {fileID: 1083426413}
   _container: {fileID: 51263699}
-  _minAngleInclination: 50
